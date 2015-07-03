@@ -57,13 +57,13 @@ skills:
 #-------------------------------
 # Work Section
 
-projects:
-- {name: Canal City Competition, folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: Foster City Elementary School, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Assimilation, folder: 'proj-3', file: 'work/proj-3.html'}
-- {name: kiteworks Microsite, folder: 'proj-4', file: 'work/proj-4.html'}
-- {name: kiteworks Videos, folder: 'proj-5', file: 'work/proj-5.html'}
-- {name: Settlr, folder: 'proj-6', file: 'work/proj-6.html'}
+portfolio:
+- {name: Canal City Competition, folder: 'proj-1', file: 'portfolio/proj-1.html', modal-id: '1', client: 'Personal', project-date: '2009-12-10', category: 'Web Design'}
+- {name: Foster City Elementary School, folder: 'proj-2', file: 'portfolio/proj-2.html', modal-id: '2', category: 'Web Design'}
+- {name: Assimilation, folder: 'proj-3', file: 'portfolio/proj-3.html', modal-id: '3', category: 'Web Design'}
+- {name: kiteworks Microsite, folder: 'proj-4', file: 'portfolio/proj-4.html', modal-id: '4', category: 'Web Design'}
+- {name: kiteworks Videos, folder: 'proj-5', file: 'portfolio/proj-5.html', modal-id: '5', category: 'Web Design'}
+- {name: Settlr, folder: 'proj-6', file: 'portfolio/proj-6.html', modal-id: '6', category: 'Web Design'}
 
 
 #-------------------------------

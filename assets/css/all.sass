@@ -8,7 +8,7 @@ $logo-path: '{{ site.data.layout.logo }}'
 $hero-path: '{{ site.data.layout.hero }}'
 $avatar-path: '{{ site.data.layout.avatar }}'
 
-$projects: {% for project in site.data.settings.projects %} "{{ project.folder }}", {% endfor %}
+$portfolio: {% for portfolio in site.data.settings.portfolio %} "{{ portfolio.folder }}", {% endfor %}
 
 //------------------------------------------------
 // Set some colors as sass variables
@@ -24,9 +24,9 @@ $documentBackgroundColor: {{ site.data.layout.documentBackgroundColor }}
 
 
 
-@import '1-tools/-tools-dir'
-@import '2-base/-base-dir'
-@import '3-sections/-sections-dir'
+
 
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap'
 @import 'agency'
+@import '1-tools/-tools-dir'
+@import '3-sections/-sections-dir'
