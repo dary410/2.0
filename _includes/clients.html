@@ -1,27 +1,44 @@
-<!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
+<section id="clients" class="section-clients">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Experiences</h2>
+                  <h3 class="section-subheading text-muted">A collection of personal and professional projects ranging from architecture to UX design to photography.</h3>
+                  <div class="clients-mobile-nav">
+                    {% for client in site.data.settings.clients %}
+                      {% if forloop.first %}
+                        <span class="active-client"></span>
+                      {% else %}
+                        <span></span>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+
+                  <div class="clients-belt">
+                    {% for client in site.data.settings.clients %}
+                      <div class="client-unit {% if forloop.first %}active-client{% endif %}">
+
+                        <figure class="client-face">
+                          <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
+                          <figcaption>
+                            <strong class="client-name">{{ client.name }}</strong>
+                            <em class="client-title">{{ client.title }}</em>
+                          </figcaption>
+                        </figure>
+
+                        <div class="client-content">
+                          {{ client.quote }}
+                        </div>
+                      </div>
+                    {% endfor %}
+
+                  </div>
+
+                  <div class="client-controls">
+                    <div class="client-control-next">{% include icons/icon-next.html %}</div>
+                    <div class="client-control-prev">{% include icons/icon-prev.html %}</div>
+                  </div>
+              </div>
+          </div>
         </div>
-    </aside>
+</section>
