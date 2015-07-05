@@ -6037,7 +6037,7 @@ section {
   padding: 100px 0; }
   section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
     font-size: 40px; }
   section h3.section-subheading {
     margin-bottom: 75px;
@@ -6259,10 +6259,7 @@ aside.clients img {
   margin: 50px auto; }
 
 section#contact {
-  background-color: #222;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: #222; }
   section#contact .section-heading {
     color: #fff; }
   section#contact .form-group {
@@ -7021,7 +7018,7 @@ header {
   header .intro-text {
     position: relative;
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     text-align: center;
     line-height: 1; }
     header .intro-text .intro-title {
@@ -7055,7 +7052,7 @@ header {
 
   header .intro-text {
     padding-top: 180px;
-    padding-bottom: 50px; }
+    padding-bottom: 20px; }
     header .intro-text .intro-title {
       font-size: 40px; }
     header .intro-text .intro-kicker {
