@@ -1,3 +1,8 @@
+.navbar .container
+  padding-left: 50px
+  padding-right: 50px
+  width: 100vw
+
 header
   text-align: center
   color: #fff
@@ -9,29 +14,27 @@ header
   -moz-background-size: cover
   background-size: cover
   -o-background-size: cover
-  .navbar-brand
-    img
-      +size(50px)
-
+    overflow: hidden
   .intro-text
-    padding-top: 100px
-    padding-bottom: 50px
+    position: relative
+    padding-top: 300px
+    padding-bottom: 200px
+    text-align: center
     line-height: 1
     .intro-title
       margin-bottom: 25px
       font:
-        size: 40px
+        size: 72px
         weight: 700
       font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
       text-transform: uppercase
       letter-spacing: 0.05em
-      clear: both
       span
         display: inline-block
         padding: 0.2em 0.5em
         border: white solid 10px
     .intro-kicker
-      margin-bottom: 100px
+      padding-bottom: 250px
       letter-spacing: 0.05em
       font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
       text-transform: uppercase
@@ -43,25 +46,15 @@ header
       img
         +size(50px)
 
-@media (min-width: 768px)
+@media (max-width: 640px)
+  .navbar .container
+    padding-left: 20px
+    padding-right: 20px
   header .intro-text
-    padding-top: 300px
-    padding-bottom: 200px
+    padding-top: 180px
+    padding-bottom: 50px
     .intro-title
-      margin-bottom: 25px
       font:
-        size: 72px
-        weight: 700
-      text-transform: uppercase
-      letter-spacing: 0.05em
-      clear: both
-      span
-        display: inline-block
-        padding: 0.2em 0.5em
-        border: white solid 10px
+        size: 40px
     .intro-kicker
-      margin-bottom: 100px
-      letter-spacing: 0.05em
-      text-transform: uppercase
-      font-size: 14px
-      font-weight: 400
+      padding-bottom: 100px

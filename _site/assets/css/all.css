@@ -5981,8 +5981,10 @@ fieldset[disabled] .btn-xl.active {
   .navbar-default .navbar-brand {
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
     color: #fed136;
+    width: 50px;
+    padding-left: 0px;
     background: url(../img/logo.svg) no-repeat;
-    background-size: 30px 30px; }
+    background-size: 50px 50px; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
       color: #fec503; }
   .navbar-default .navbar-collapse {
@@ -6999,6 +7001,11 @@ header .intro-text a {
 .proj-container img {
   max-width: 100%; }
 
+.navbar .container {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100vw; }
+
 header {
   text-align: center;
   color: #fff;
@@ -7009,28 +7016,27 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
-  header .navbar-brand img {
-    height: 50px;
-    width: 50px; }
+  -o-background-size: cover;
+    -o-background-size-overflow: hidden; }
   header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    text-align: center;
     line-height: 1; }
     header .intro-text .intro-title {
       margin-bottom: 25px;
-      font-size: 40px;
+      font-size: 72px;
       font-weight: 700;
       font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      clear: both; }
+      letter-spacing: 0.05em; }
       header .intro-text .intro-title span {
         display: inline-block;
         padding: 0.2em 0.5em;
         border: white solid 10px; }
     header .intro-text .intro-kicker {
-      margin-bottom: 100px;
+      padding-bottom: 250px;
       letter-spacing: 0.05em;
       font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
@@ -7042,27 +7048,18 @@ header {
         height: 50px;
         width: 50px; }
 
-@media (min-width: 768px) {
+@media (max-width: 640px) {
+  .navbar .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 180px;
+    padding-bottom: 50px; }
     header .intro-text .intro-title {
-      margin-bottom: 25px;
-      font-size: 72px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      clear: both; }
-      header .intro-text .intro-title span {
-        display: inline-block;
-        padding: 0.2em 0.5em;
-        border: white solid 10px; }
+      font-size: 40px; }
     header .intro-text .intro-kicker {
-      margin-bottom: 100px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400; } }
+      padding-bottom: 100px; } }
 .section-clients {
   position: relative;
   min-height: 760px; }
