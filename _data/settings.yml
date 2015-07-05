@@ -38,12 +38,6 @@ seo:
 
 # NOTE: The avatar is defined in the all.sass document.
 
-blurb: >
-  A **dreamer** who won't stop pursuing the **passion** of **creating products** that would,
-  cliche, make the world a better place. A good **design** is not only a must but
-  automatically becomes a happy byproduct of such pursue.
-
-
 skills:
 - {name: Communication, value: '7'}
 - {name: Planning, value: '8'}
